@@ -17,6 +17,7 @@
 cc_library_shared {
     name: "libkeymaster_messages",
     vendor_available: true,
+    sdclang: false,
     vndk: {
         enabled: true,
     },
@@ -55,6 +56,7 @@ cc_library_shared {
 cc_library {
     name: "libkeymaster_portable",
     vendor_available: true,
+    sdclang: false,
     vndk: {
         enabled: true,
     },
@@ -142,6 +144,7 @@ cc_library {
 cc_library {
     name: "libsoftkeymasterdevice",
     vendor_available: true,
+    sdclang: false,
     vndk: {
         enabled: true,
     },
@@ -193,6 +196,7 @@ cc_library {
 cc_library {
     name: "libpuresoftkeymasterdevice",
     vendor_available: true,
+    sdclang: false,
     vndk: {
         enabled: true,
     },
@@ -231,6 +235,7 @@ cc_library {
 
 cc_library_shared {
     name: "libkeymaster3device",
+    sdclang: false,
     vendor: true,
     srcs: [
         "legacy_support/keymaster_passthrough_key.cpp",
@@ -285,6 +290,7 @@ cc_library_shared {
 cc_library_shared {
     name: "libkeymaster4",
     vendor_available: true,
+    sdclang: false,
     srcs: [
         "legacy_support/keymaster_passthrough_key.cpp",
         "legacy_support/keymaster_passthrough_engine.cpp",
